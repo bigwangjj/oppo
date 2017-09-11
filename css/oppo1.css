@@ -1,0 +1,868 @@
+*{box-sizing: border-box;}
+body{background: #fff;
+    color: #393939;
+    font-family: "Myriad Pro", Arial, "FZLanTingHei-R-GBK", 方正兰亭黑, "Microsoft YaHei", 微软雅黑, STHeiti, 华文黑体, SimSun, 宋体, sans-serif;
+    font-size: 100%;
+    line-height: normal;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    margin: 0;}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a{
+    color:#666;
+    text-decoration:none;
+}
+#container{width:100%;
+
+}
+
+
+/*oppo主页页面头部*/
+div.upper{
+    color: #FFF;
+    min-height: 30px;
+    font-size: 13px;
+    background:#009B72}
+div.wrapper{
+
+    width:1200px;
+    margin:0 auto;}
+div.wrapper>ul{float:right;}
+div.wrapper>ul>li{
+    float:left;
+    line-height: 29px;
+padding:0 20px;}
+div.wrapper>ul>li>a{color:#fff;font-size: 16px;}
+div.wrapper>ul>li:hover{background:#47b488;  transition: all 0.45s ease 0.1s;}
+div.bottom{background:#fff;height:80px;}
+div.logo{
+    float:left;
+    width:400px;
+   height:80px;
+    padding:30px;
+}
+div.wrapper-1{
+    height:80px;
+    width:1200px;
+    margin:0 auto;}
+div.logo>img{width:118px;height:19px;}
+div.menu{
+    width:800px;
+    height:80px;
+    float:right;}
+div.menu>ul{margin:30px 0px 0px;float:right;}
+div.menu>ul>li{
+    float:left;
+width:74px;
+    text-align: center;
+}
+div.menu>ul>li>a:hover{
+    color:rgb(57, 57, 57);
+    border-bottom:2px solid rgb(42, 173, 111);
+}
+
+
+/*oppo主页轮播*/
+
+#content{width:100%;}
+#slider{
+    position:relative;
+
+    right: 10%;
+    height:568px;}
+#slider>img{width:1800px;
+    position: relative;
+    }
+#slider li{
+    width:20px;
+    height:20px;
+    border:2px solid rgb(42, 173, 111);
+    border-radius:50%;
+    background-color:#7B7B7B;
+    margin-right:10px;
+    float:left;
+}
+#slider > img {   /*轮播广告的图片，绝对定位，zIndex为-1*/
+    position: absolute;
+    z-index: -1;
+}
+#slider > img.active {  /*显示在最上方的广告图片*/
+    z-index: auto;
+}
+#slider ul{
+    position:absolute;
+    left:58%;
+    bottom:5%;
+}
+#slider ul li:hover{ background-color:#fff;}
+#slider ul li.active {  /*当前显示出来的序号*/
+    background-color:#fff;
+}
+
+
+/*四幅小图*/
+#bri{
+
+    padding-top:5px;
+    width:100%;
+    height:248px;}
+
+#bri>ul{
+    float:left;
+    width:100%
+
+}
+
+#bri>ul>li{
+   margin-right:13px;
+    float:right;
+    width:32%;
+    height:242px;
+    }
+#bri>ul>li:hover{
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transform: translate3d(0, -2px, 0);
+    transition: transform 0.4s ease;
+}
+#bri img{
+   width:100%;
+    height:242px;}
+
+
+
+/*底部*/
+#main-foot{width:100%;padding:46px 0;}
+
+div.wrapper-foot{margin:0 auto;height:200px;width:1176px;border-bottom: 1px solid #000000;}
+div.g{width:882px;height:146px;float:left;}
+li.two{width:25%;height:146px;float:left;}
+li.two>a{
+    color: #363636;
+    font-size: 0.9375rem;
+    padding: 15px 0;
+    display: block;
+    font-weight: bold;}
+ul.one-1>li{padding-top:5px;}
+ul.one-1>li>a{
+    margin:5px 0;
+    font-size: 0.8125rem;
+    color: #363636;}
+ul.one a:hover{
+    color:rgb(42, 173, 111);
+    transition: all 0.45s ease 0.1s;
+}
+div.quarter{width:292px;height:197px;float:right;}
+
+div.online{width:100%;height:47px;margin-top:20px;}
+div.online img{
+   float:right;
+    max-width: 100%;
+    height: auto;}
+div.online-1{width:100%;
+    text-align: right;
+    height:80px;
+    margin-top:35px;
+    }
+
+div.online img:hover{
+    transform: translate3d(0,-10px,0);
+    transition: transform 0.8s ease;}
+p.number{font-size: 1.875rem;}
+
+
+/*页脚*/
+div.foot-info{width:100%;height:78px;}
+
+div.foot-info>div{
+    max-width: 1176px;
+    margin: 0 auto;
+    height:78px;
+}
+
+ul.foot-info-1{float:left;width:50%;height:78px;}
+ul.foot-info-1>li{float:left;line-height:78px;}
+
+ul.foot-info-1 p{
+
+    font-size: 0.8125rem;
+    color: #363636;}
+ul.foot-info-1 a{
+    margin-top:22px;
+    margin-left: 10px;
+    width: 24px;
+    height: 25px;
+    background:url("../imges/cation.png")no-repeat 0 0;
+    display: inline-block;
+}
+ul.foot-info-1 a:hover{
+    background-position: -24px 0;
+}
+
+ul.foot-info-2{float:right;width:185px;line-height:78px;}
+ul.foot-info-2 li{float:left; position: relative;height:25px;}
+ul.foot-info-2 li a{
+    margin-top:18px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #c9c9c9;}
+
+
+li.weibo>a{
+    background:url("../imges/sprite-icons.svg")no-repeat -128px -241px;}
+li.weixin>a{
+    background:url("../imges/sprite-icons.svg")no-repeat -126px -350px;}
+
+
+li.weixin:hover img{display: block;}
+li.weixin:hover a{background-color: #00925f;}
+
+
+
+
+li.fuwu:hover img{display: block;}
+li.fuwu:hover a{background-color: #1caceb;}
+li.fuwu>a{
+    background:url("../imges/sprite-icons.svg")no-repeat -85px -315px;}
+li.weibo a:hover{background-color: #d9595c;}
+
+ul.foot-info-2 img{
+    display: none;
+    position: absolute;
+    top:-220px;
+   left:-55px;
+}
+
+
+
+/*回到顶部*/
+#scroll{
+    display: none;
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    width: 42px;
+    min-height: 74px;
+    z-index: 999;}
+#scroll>div{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;}
+#scroll>div>a{
+    width: 42px;
+    height: 36px;
+    display: block;
+
+    position: relative;
+    background-color: #ededed;}
+#scroll>div>a>span{
+   padding-right:50px;
+    width: 120px;
+    height: 36px;
+    color: #fff;
+    line-height: 36px;
+    font-size: 14px;
+
+    display: none;
+}
+#scroll>div>a>i{
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    background:url("../imges/backtop-icon.png")no-repeat center;
+
+}
+#scroll>div>a>i.bi{
+
+    background:url("../imges/feedback-icon.png")no-repeat center;
+}
+
+#scroll>div>a:hover span{
+    display: block;
+    width: 120px;
+    margin-left: -78px;
+     background-color: #47b488;
+
+    transition: transform 0.8s ease;
+
+}
+#scroll>div>a:hover i{ background:url("../imges/backtop-icon-active.png")no-repeat center;}
+#scroll>div>a:hover i.bi{ background:url("../imges/feedback-icon-active.png")no-repeat center;}
+
+
+
+
+
+/*登陆注册页*/
+
+#login{
+min-width:680px;
+}
+#login>div.header{
+    height: 34px;
+    background: #2aad6f;
+    color: #fff;
+    line-height: 34px;
+    margin-bottom: 110px;
+    min-width: 960px;}
+
+#login>div.header>div{
+    width:960px;
+    margin:0 auto;
+
+    height:34px;
+}
+ul.sec {
+    float:left;
+}
+ul.sec >li{
+    height:34px;
+    float:left;
+    border-left: 1px solid #57b488;}
+
+ul.sec >li>a{padding:0 20px;
+    text-decoration: none;
+    outline: 0;
+    color: inherit;
+    cursor: pointer;}
+
+
+ul.sec >li:hover{
+    background:#47b488;  transition: all 0.45s ease 0.1s;
+}
+
+div.log-ina{
+    width: 320px;
+    margin: 0 auto;}
+
+div.lgnheader{margin-bottom: 45px;}
+div.lgnheader>div{
+    background:url("../imges/logo.png") no-repeat;
+    width: 205px;
+    height: 34px;
+    background-size: 100% 100%;
+    margin: 0 auto 20px;
+}
+div.lgnheader>h3{
+    font-weight: 500;
+    font-size: 15px;
+    color: #363636;
+    text-align: center;}
+
+
+div.input>div>input{
+    display: block;
+    height: 50px;
+    line-height: 20px;
+    margin:20px 0px;
+    padding:20px;
+    font-size: 14px;
+    background: #fff;
+    width: 320px;
+    border: 1px solid #e2e2e2;
+}
+
+
+div.denglu>a{
+    margin-bottom: 20px;
+    font-size: 10px;
+    float:right;
+    text-align: right;color: #00925f;
+    cursor: pointer;
+    text-decoration: underline;}
+
+
+div.input>div.btn input{
+    outline: none;
+    color: #fff;
+    background: #2aad6f;
+    line-height:16px;
+    font-size: 16px;
+   }
+
+div.input>div.zhuce input{
+    outline: none;
+    font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+    line-height: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+div.input>div.zhuce input:hover{background: #e1e1e1;;}
+div.area{margin-top:30px;}
+div.area>div.qita{
+    background: url("../imges/ico_title.png");
+    width: 318px;
+    height: 23px;
+    margin: 0 auto;}
+
+div.area>div.links{
+    text-align: center;
+    padding-top: 25px;}
+
+div.area>div.links>a{
+
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin: 0 8px;
+    vertical-align: middle;}
+
+
+
+
+/*注册*/
+
+#register{
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    width: 958px;
+    margin: -20px auto 0;}
+div.register-title{
+    color: #363636;
+    font-size: 20px;
+    text-align: center;
+    height: 110px;
+    line-height: 110px;
+    border-bottom: 1px solid #e1e1e1;}
+
+
+form.register-form{
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 90px;
+    height: 484px;}
+
+form.register-form>div>input{
+    display: block;
+    height: 40px;
+    line-height: 20px;
+    padding: 12px 16px;
+    font-size: 14px;
+    background: #fff;
+    width: 320px;
+    border: 1px solid #e2e2e2;}
+
+
+div.yanzhen{
+    margin-top: 20px;
+    width:320px;
+    height:200px;
+    }
+
+div.field{
+    height: 15px;
+    line-height: 15px;
+    margin-top: 10px;}
+div.field>div{
+    float: left;
+    color: #878b8a;
+    font-size: 12px;}
+div.field>div>a{color:#00925f;}
+
+div.button{
+    margin-top:20px;}
+
+
+
+#register>form>div.button>input{
+    outline: none;
+    display: block;
+    text-align: center;
+    width: 320px;
+    height: 46px;
+    line-height: 26px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    background: #2aad6f;}
+
+#register>form>div.button>input:hover{background: #47b488;}
+
+
+
+
+
+
+
+
+/*产品页*/
+
+#main>div.index{
+
+    background-color: rgb(247, 247, 247);
+    font-family: "Microsoft YaHei";}
+
+
+div.wrapper-c{
+    max-width: 1150px;
+    margin:0 auto;}
+
+div.wrapper-c>ul{
+
+    display: block;
+    padding: 19px 0px 14px;}
+
+div.wrapper-c>ul>li{
+    color: rgb(123, 123, 123);
+    font-size: 0.875rem;
+    float:left;}
+
+div.wrapper-c>ul>li>span{padding: 0px 10px;}
+
+div.main-flagship{height:736px;margin-top: 20px;}
+
+div.main-flagship>div.flagship{
+    padding: 0px 0.75rem;
+    max-width: 1200px;
+    margin: 0px auto;}
+
+
+div.pull-left{float: left;}
+
+div.pull-left>a.left-up{
+    overflow: hidden;
+    margin-top: 10px;
+    display: block;
+    position: relative;
+    width: 770px;
+    height: 364px;}
+
+div.pull-left>a.left-up>img.img2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 770px;
+    z-index: 3;
+}
+
+
+div.pull-left>a.left-up>img.img1{
+    position: absolute;
+    width: 770px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: all 0.9s;
+   }
+
+a.left-up:hover img.img1{
+    transform: scale(1.2);
+}
+
+
+div.pull-right{float:right;}
+
+
+div.pull-right>a.right-up{
+    margin-top: 10px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    width: 396px;
+    height: 738px;}
+
+div.pull-right>a.right-up>img.img1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 396px;
+    height: 738px;
+z-index: 5;
+}
+
+div.pull-right>a.right-up>img.img2{
+    position: absolute;
+    width: 396px;
+    height: 738px;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    transition: all 0.9s;
+   }
+a.right-up:hover img.img2{
+    transform: scale(1.1);
+}
+
+
+/*oppo产品系列*/
+
+div.box-products{
+    max-width: 1200px;
+    padding: 0px 0.75rem;
+    margin: 90px auto 0px;}
+
+
+div.chanping{
+    display: block;
+    text-align: center;
+    font-size: 1.4375rem;
+    height: 30px;
+    width: 1176px;
+    background: url("../imges/title-bg.png") no-repeat scroll center center transparent;}
+
+
+ul.r1{margin-top: 20px;height:21px;}
+
+
+ul.r1>li.R1{float:left;}
+ul.r1>li.gen{float:right;}
+
+.hei{
+    margin-right: 10px;
+    color: rgb(30, 30, 30);
+}
+ul.r1>li>a{
+    display: inline-block;
+    line-height: 20px;
+    height: 20px;
+    font-size: 1.125rem;}
+ul.brick-list{margin-top: 20px;height:371px;}
+
+ul.brick-list>li{
+    float: left;
+    background-color: rgb(255, 255, 255);
+    width: 283px;
+    padding: 60px 10px 45px;
+    margin-right: 10px;
+    border-bottom: medium none;
+    box-shadow: none;
+    transform: translate3d(0px, 0px, 0px);
+    transition: transform 0.3s ease 0s;}
+ul.brick-list>li>a>div{
+
+    float: none;
+    width: 100%;
+    padding-left: 52.5px;
+    padding-right: 52.5px;
+}
+ul.brick-list>li>a>div>img{
+    border: 0px none;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;}
+
+
+div.brick-content{
+    margin-top:35px;
+    float: none;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+div.brick-content>a>div{
+    text-align: center;
+    color: rgb(20, 20, 20);
+    font-size: 1rem;
+    margin-top: 35px;
+    line-height: 20px;}
+
+div.brick-content>a>p{
+    text-align: center;
+    color: rgb(160, 160, 160);
+    font-size: 0.75rem;
+    line-height: 18px;
+    margin-top: 4px;
+}
+
+
+
+ul.brick-list>li:hover{
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+transform: translate3d(0, -2px, 0);
+transition: transform 0.4s ease;}
+
+
+/*产品特色*/
+div.oppo-feature{
+ max-width: 1200px;
+padding: 0 0.75rem;
+margin: 50px auto 0;}
+
+div.feature-item{
+    margin-top: 25px;
+    margin-bottom: 100px;}
+div.feature-item>a>img{
+  margin-left: 2px;
+    max-width: 100%;
+    height: auto;}
+
+
+/*详情页*/
+
+div.box{background:#F2F2F2;}
+div.product_intro{
+    position: relative;
+    height:800px;
+    padding: 0 0.75rem;
+    max-width: 1200px;
+    margin: 20px auto;}
+
+
+
+
+div.preview{
+    width:50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+div.mediumDiv{
+    width:588px;
+    overflow: hidden;
+}
+#list{
+    width:2500px;
+    height:588px;
+    overflow: hidden;
+}
+#list>li{
+    float:left;
+    position:relative;
+
+}
+#list>li>img{
+    width:588px;
+    height:588px;
+    float:left;
+    position:relative;
+    }
+
+
+#icon_list>li{
+    padding: 12px;
+    margin-left:30px;
+    float:left;
+    height:77px;
+    width:77px;
+    border-radius: 50%;
+    border: 1px solid  rgb(42, 173, 111);
+}
+
+#icon_list>li>img{
+    display: block;
+    margin:0 auto;
+    max-width:100%;
+    height:auto;}
+
+
+/*右边栏*/
+div.right-preview{
+    float:right;
+    width:50%;
+    letter-spacing: normal;
+    height:500px;
+
+}
+div.buying-header-desk h1{
+    font-size: 1.5rem;
+    margin: 20px 0px;
+}
+div.buying-header-desk p{
+color: rgb(135, 135, 135);
+font-size: 0.8125rem;}
+
+div.buying-price{
+    padding:20px 0;
+    line-height: 1;
+}
+div.buying-price>p strong{
+    color: rgb(255, 51, 0);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-right: 8px;
+}
+div.add-cart-form{padding-top:10px;}
+section{margin-bottom:15px;}
+.yanse{width:13%; float:left;font-size: .875rem;}
+.xinhao{width:86%;overflow: hidden;}
+.xinhao ul{float:left;}
+.xinhao ul li{
+    margin-left:10px;
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+   width:155px;
+    height:30px;
+    float:left;}
+.xinhao ul li a{
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+}
+
+div.good-gifts{
+    overflow: hidden;
+    border-top: 1px dashed #b6b6b6;
+    padding: 15px 0 10px;}
+
+div.zenping{
+    float:left;
+    width:13%;
+    line-height: 40px;
+    font-size: .875rem;
+}
+div.zp{
+    float:right;
+    width:86%;font-size: .875rem;height:106px;}
+ul.lanya{
+    margin-bottom:10px;
+    height: 48px;
+}
+ul.lanya li img{
+    width: 40px;
+    height: 40px;}
+ul.lanya li:first-child{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e2e2e2;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;}
+ul.lanya li.erji{float:left;line-height:40px;width:80px;}
+li.baise{
+    width: 88px;
+    min-height: 28px;
+    border-radius: 5px;
+    border: 1px solid #2aad6f;
+    text-align: center;
+    margin-top:5px;
+    margin-left:100px;
+    float: left;}
+li.baise>a{
+width: 88px;
+line-height: 28px;
+}
+
+div.suiping>a{
+   margin:3px 5px;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+    display: inline-block;
+    width: 170px;}
+div.suiping>a>span.sui{
+    border-right: 1px solid #e2e2e2;
+    padding: 5px 9px;
+    float: left;
+    display: inline-block;
+    color: #e9af4a;}
+div.suiping>a>span.ping{
+    padding: 5px 9px;
+    float: left;
+    display: inline-block;
+}
+.liaojie{color:red;}
